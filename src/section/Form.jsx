@@ -76,6 +76,7 @@ const Form = () => {
             cursor:"pointer"
           }}
           href="https://wa.me/+918368106072"
+          target="blank"
         >
           CHAT ON WHATSAPP
           <img style={{width:"23px",transform:"rotate(180deg)",margin:"0 1em"}} src={arrow}/>

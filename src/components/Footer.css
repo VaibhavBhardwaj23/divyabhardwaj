@@ -1,0 +1,28 @@
+.footer
+{
+    background: #228B22;
+    padding: 1.6em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.footer p
+{
+    font-size: 0.5rem;
+}
+.trainer h4
+{
+font-style: italic;
+font-weight: 400;
+font-size: 0.5rem;
+}
+@media screen and (min-width: 700px) {
+    .trainer h4
+    {
+      font-size: 1rem;
+    }
+    .footer p
+{
+    font-size: 1rem;
+}
+}

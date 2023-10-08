@@ -1,0 +1,58 @@
+.steps h1
+{
+background-color: #228B22;
+padding: 0.3em 0.7em;
+margin: 0.3em 0.5em;
+border-radius: 50%;
+}
+.steps p
+{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.steps_content
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.steps 
+{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+.steps_img
+{
+  width: 80%;
+ border: 2px solid #228B22;
+  line-height: 0;
+  margin: 1rem auto;
+}
+.steps_img img
+{
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+    .steps_section_hero {
+      max-width: 90%;
+      margin:2em  auto;
+    }
+    .steps p
+{
+  font-size: 2rem;
+}
+.steps_hero
+{
+  width: 50%;
+}
+.steps_content
+{
+  flex-direction: row;
+}
+.steps_img
+{
+  width: 50%;
+}
+}

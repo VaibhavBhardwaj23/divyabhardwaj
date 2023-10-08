@@ -1,0 +1,15 @@
+.scroll-container
+{
+display: flex;
+align-items: baseline;
+  justify-content: space-between;
+cursor: pointer;
+overflow-x: scroll;
+}
+@media screen and (min-width: 600px) {
+
+    .rvw_section_hero {
+      max-width: 90%;
+      margin: auto;
+    }
+  }

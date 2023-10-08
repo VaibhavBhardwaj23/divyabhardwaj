@@ -1,0 +1,43 @@
+.hero_section {
+  padding: 1em;
+  flex-direction: column;
+  display: flex;
+}
+.section_1 {
+  width: 100%;
+  margin: auto;
+}
+.section_1 h1 {
+  color: #228b22;
+  font-size: 4rem;
+}
+.section_1 p {
+  width: 100%;
+  font-weight: 600;
+  margin: 1em 0;
+}
+.hero_image {
+  border: 2px solid #228b22;
+  line-height: 0;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media screen and (min-width: 700px) {
+  .hero_section {
+    flex-direction: row;
+  }
+  .section_1 {
+    width: 50%;
+  }
+  .section_1 h1 {
+    font-size: 8vw;
+  }
+  .section_1 p {
+    width: 50%;
+  }
+  .hero_image {
+    width: 35%;
+  }
+}

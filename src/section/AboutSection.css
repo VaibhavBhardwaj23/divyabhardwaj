@@ -1,0 +1,30 @@
+.abt_section img {
+  width: 50%;
+}
+.abt_section p {
+  width: 40%;
+  font-size: 0.6rem;
+  margin: 0 auto;
+  font-weight: 600;
+  height: max-content;
+}
+
+@media screen and (min-width: 600px) {
+  .abt_section img {
+    max-width: 30%;
+    flex: 1;
+  }
+  .abt_section_hero {
+    max-width: 90%;
+    margin: auto;
+  }
+  .abt_section p {
+    width: 40%;
+    margin: 0 auto;
+
+    font-size: 1.5rem;
+  }
+  .abt_section {
+    padding: 1em;
+  }
+}

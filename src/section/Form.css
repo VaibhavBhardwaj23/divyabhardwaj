@@ -84,5 +84,7 @@
     .cta
     {
         font-size: 1em;
+        width: 50%;
+        margin: 0 auto;
     }
 }

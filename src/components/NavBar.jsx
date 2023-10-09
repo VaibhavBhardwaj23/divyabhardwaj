@@ -2,6 +2,7 @@ import "./NavBar.css";
 import menu from "../assets/menu.png";
 import cross from "../assets/cross.png";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
   const [show, setShow] = useState(false);
   return (
@@ -16,7 +17,15 @@ const NavBar = () => {
           fontWeight: "300",
         }}
       >
-        <p>Home</p>
+        <NavLink
+          style={{
+            color: "white",
+            textDecoration: "none",
+          }}
+          to={"/"}
+        >
+          <p>Home</p>
+        </NavLink>
         <div
           style={{
             width: "50%",
@@ -24,9 +33,33 @@ const NavBar = () => {
             justifyContent: "space-evenly",
           }}
         >
-          <p>Reviews</p>
-          <p>Contact</p>
-          <p>About Me</p>
+          <NavLink
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+            to={"/reviews"}
+          >
+            <p>Reviews</p>
+          </NavLink>
+          <NavLink
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+            to={"/contact"}
+          >
+            <p>Contact</p>
+          </NavLink>
+          <NavLink
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+            to={"/about"}
+          >
+            <p>About Me</p>
+          </NavLink>
         </div>
         <p>New Delhi, India</p>
       </nav>
@@ -40,7 +73,15 @@ const NavBar = () => {
           fontWeight: "300",
         }}
       >
-        <p>Home</p>
+        <NavLink
+          style={{
+            color: "white",
+            textDecoration: "none",
+          }}
+          to={"/"}
+        >
+          <p>Home</p>
+        </NavLink>
         <img
           onClick={() => setShow(!show)}
           style={{ width: "23px" }}
@@ -73,9 +114,36 @@ const NavBar = () => {
               justifyContent: "space-evenly",
             }}
           >
-            <p>Reviews</p>
-            <p>Contact</p>
-            <p>About Me</p>
+            <NavLink
+              style={{
+                color: "white",
+                textDecoration: "none",
+              }}
+              to={"/reviews"}
+              onClick={() => setShow(!show)}
+            >
+              <p>Reviews</p>
+            </NavLink>
+            <NavLink
+              style={{
+                color: "white",
+                textDecoration: "none",
+              }}
+              to={"/contact"}
+              onClick={() => setShow(!show)}
+            >
+              <p>Contact</p>
+            </NavLink>
+            <NavLink
+              style={{
+                color: "white",
+                textDecoration: "none",
+              }}
+              to={"/about"}
+              onClick={() => setShow(!show)}
+            >
+              <p>About Me</p>
+            </NavLink>
           </div>
           <p style={{ margin: "1em auto" }}>New Delhi, India</p>
         </div>

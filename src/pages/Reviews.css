@@ -1,0 +1,42 @@
+.review_page_hero,
+.abt_me_hero
+{
+    width: 90%;
+    margin:  auto;
+}
+.abt_page img
+{
+width: 50%;
+flex: 1;
+object-fit: cover;
+}
+.abt_page p {
+    width: 50%;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    font-weight: 600;
+    height: max-content;
+  }
+@media screen and (min-width:700px) {
+    .review_page_hero
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .abt_page img {
+        max-width: 30%;
+        flex: 1;
+      }
+      .abt_page p {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 1.9rem;
+      }
+      .abt_page {
+        padding: 1em;
+      }
+    
+}
